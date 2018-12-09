@@ -1,10 +1,10 @@
 # Padoru Meme Maker
-Easy to use Padoru Padoru Meme maker.
+Easy to use Padoru Padoru Meme maker made in Unity.
 
 ![screenshot](/Assets/Sprites/screenshot.jpg?raw=true "screenshot")
 
 ## Instructions
-In Padoru Maker\PadoruMaker_Data\Resources\ ,there are three folders: 
+In `Padoru Maker\PadoruMaker_Data\Resources\`, there are three folders: 
 - AudioClip
 - BackGround
 - Character
