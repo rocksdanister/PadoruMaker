@@ -13,7 +13,7 @@ Easy to use Padoru Padoru Meme maker made in Unity.
 
 [direct-win64]: https://github.com/rocksdanister/PadoruMaker/releases/download/0.1/Padoru.Maker.zip
 
-You can also [build the app manually][BUILD]
+You can also build the app manually.
 ## Instructions
 In `Padoru Maker\PadoruMaker_Data\Resources\`, there are three folders: 
 - AudioClip
