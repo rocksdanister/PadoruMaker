@@ -4,7 +4,7 @@ Easy to use Padoru Padoru Meme maker made in Unity.
 
 ![screenshot](/Assets/Sprites/screenshot.jpg?raw=true "screenshot")
 
-# Get the App
+## Get the App
 
 ### Windows
  - [`Padoru Maker.zip`][direct-win64]  
