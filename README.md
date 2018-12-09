@@ -1,8 +1,18 @@
 # Padoru Meme Maker
+[![GitHub release](https://img.shields.io/github/release/phw/peek.svg)](https://github.com/rocksdanister/PadoruMaker/releases)
 Easy to use Padoru Padoru Meme maker made in Unity.
 
 ![screenshot](/Assets/Sprites/screenshot.jpg?raw=true "screenshot")
 
+# Get the App
+
+### Windows
+ - [`Padoru Maker.zip`][direct-win64]  
+   _(SHA-256: 4880A7FE8849E3DBEF8E9531A8F10EDC8DFFFAC3058784095C0FA9C1A47E7E9A)_
+
+[direct-win64]: https://github.com/rocksdanister/PadoruMaker/releases/download/0.1/Padoru.Maker.zip
+
+You can also [build the app manually][BUILD]
 ## Instructions
 In `Padoru Maker\PadoruMaker_Data\Resources\`, there are three folders: 
 - AudioClip
