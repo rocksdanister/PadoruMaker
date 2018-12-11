@@ -15,9 +15,10 @@ public class ResourceHandler : MonoBehaviour {
     [HideInInspector] public static float bgScale = 1.0f;
     [HideInInspector] public static float bgSpeed = 0.05f;
     [HideInInspector] public static Vector3 bgPos;
- 
 
+    [HideInInspector] public static bool isBgLoaded;
     [HideInInspector] public static bool isPlaying;
+    [HideInInspector] public static bool isScale; // to autoscale or not
     AudioSource audioSource;
     float animationClipPos;
     Sprite[] arr = new Sprite[5]; // texture storing for later use.
@@ -41,7 +42,6 @@ public class ResourceHandler : MonoBehaviour {
     {
         isPlaying = true;
 
-        //gameObject.GetComponent<RecorderExample>();
         UIpanel.SetActive(false);
         audioSource.Play();
         anim.enabled = true;
@@ -51,12 +51,16 @@ public class ResourceHandler : MonoBehaviour {
 
     public void Reload() // full scene reloaded, including data files LoadAssets()
     {
+        isScale = true; //already scaled by user, auto scale disable
+        isBgLoaded = false;
         isPlaying = false; // since static
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     public void ReloadButton()
     {
+        isScale = false; // auto scale enable
+        isBgLoaded = false;
         isPlaying = false; // since static
         chScale = 0.5f;
         bgScale = 1.0f;
@@ -97,10 +101,12 @@ public class ResourceHandler : MonoBehaviour {
         {
             arr[i] = Sprite.Create(www.texture, new Rect(0.0f, 0.0f, www.texture.width, www.texture.height), new Vector2(0.5f, 0.5f), 100.0f);
             bg.GetComponent<SpriteRenderer>().sprite = arr[i];
+            isBgLoaded = true;
         }
         else if( i == 1)
         {
             arr[i] = Sprite.Create(www.texture, new Rect(0.0f, 0.0f, www.texture.width, www.texture.height), new Vector2(0.5f, 0.5f), 100.0f);
+
         }
         else if (i == 2)
         {
@@ -147,7 +153,7 @@ public class ResourceHandler : MonoBehaviour {
     private void LateUpdate()
     {
         ch.GetComponent<SpriteRenderer>().sprite = arr[(int)SpriteNo.right];
-
+        //.. spin animation sprite change.
         if(animationClipPos > 220)
         {
             Reload();

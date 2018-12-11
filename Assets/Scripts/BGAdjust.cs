@@ -62,5 +62,21 @@ public class BGAdjust : MonoBehaviour {
             }
             ResourceHandler.bgPos = gameObject.transform.position;
         }
+
+        if (ResourceHandler.isBgLoaded == true && ResourceHandler.isScale == false) //scaling bg to screen
+        {
+            Vector2 cameraSize =
+            Camera.main.ViewportToWorldPoint(Vector3.one) -
+            Camera.main.ViewportToWorldPoint(Vector3.zero);
+
+            float sizeX = Mathf.Abs(cameraSize.x) / (GetComponent<Renderer>().bounds.size.x / transform.localScale.x);
+            //float sizeY = Mathf.Abs(cameraSize.y) / (GetComponent<Renderer>().bounds.size.y / transform.localScale.y);
+
+            if (sizeX > 10) //constrain
+                sizeX = 10;
+            transform.localScale = new Vector3(sizeX, sizeX, 1); // only 16:9 will scale proper
+            ResourceHandler.bgScale = sizeX;
+            ResourceHandler.isBgLoaded = false;
+        }
     }
 }

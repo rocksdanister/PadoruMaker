@@ -2000,7 +2000,7 @@ MonoBehaviour:
   m_FillRect: {fileID: 1909444035}
   m_HandleRect: {fileID: 739791225}
   m_Direction: 2
-  m_MinValue: 0.05
+  m_MinValue: 0
   m_MaxValue: 2
   m_WholeNumbers: 0
   m_Value: 1
