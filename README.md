@@ -9,9 +9,9 @@ Easy to use Padoru Padoru Meme maker made in Unity, just change the art files & 
 
 ### Windows
  - [`Padoru Maker.zip`][direct-win64]  
-   _(SHA-256: 4880A7FE8849E3DBEF8E9531A8F10EDC8DFFFAC3058784095C0FA9C1A47E7E9A)_
+   _(SHA-256: 3AE8F6569EAFD75879156B762C5B7A58E84D907F7A3AFE25A438FE98B4DFB492)_
 
-[direct-win64]: https://github.com/rocksdanister/PadoruMaker/releases/download/0.1/Padoru.Maker.zip
+[direct-win64]: https://github.com/rocksdanister/PadoruMaker/releases/download/0.2/Padoru.Maker.zip
 
 You can also build the app manually.
 ## Instructions
