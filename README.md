@@ -1,5 +1,6 @@
 # Padoru Meme Maker
 [![GitHub release](https://img.shields.io/github/release/rocksdanister/PadoruMaker.svg)](https://github.com/rocksdanister/PadoruMaker/releases)
+[![Github all releases](https://img.shields.io/github/downloads/rocksdanister/PadoruMaker/total.svg)](https://github.com/rocksdanister/PadoruMaker/releases)
 
 Easy to use Padoru Padoru Meme maker made in Unity, just change the art files & make padoru meme's under a minute.
 
